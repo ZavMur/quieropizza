@@ -24,10 +24,15 @@ namespace QuieroPizza.Web.Controllers
             producto3.id = 3;
             producto3.Descripcion = "Pizza Jamon y Queso";
 
+            var producto4 = new ProductoModel();
+            producto4.id = 4;
+            producto4.Descripcion = "Pizza Canadiense";
+
             var listadeProductos = new List<ProductoModel>();
             listadeProductos.Add(producto1);
             listadeProductos.Add(producto2);
             listadeProductos.Add(producto3);
+            listadeProductos.Add(producto4);
 
             return View(listadeProductos);
         }
